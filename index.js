@@ -21,10 +21,9 @@ window.onload = async () => {
         let listItem = document.createElement("div");
         listItem.classList.add(
           "col",
-          
           "justify-content-center"
         );
-        listItem.innerHTML = `<div class="card" style="width: 18rem;">
+        listItem.innerHTML = `<div class="card mb-4" style="width: 18rem;">
                                 <img src=${event.imageUrl} class="card-img-top" alt="...">
                               <div class="card-body">
                                 <h5 class="card-title">${event.name}</h5>
