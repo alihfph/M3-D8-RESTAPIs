@@ -1,3 +1,5 @@
+
+console.log("connected")
 window.onload = async () => {
   const url = "https://striveschool-api.herokuapp.com/api/product/";
   const currentProducts = document.getElementById("currentProducts");
@@ -18,9 +20,9 @@ window.onload = async () => {
       data.forEach((event) => {
         let listItem = document.createElement("div");
         listItem.classList.add(
-          "card",
-          "d-flex",
-          "justify-content-between"
+          "col",
+          
+          "justify-content-center"
         );
         listItem.innerHTML = `<div class="card" style="width: 18rem;">
                                 <img src=${event.imageUrl} class="card-img-top" alt="...">
@@ -72,7 +74,7 @@ const handleSubmit = async (e) => {
 
     if (response.ok) {
       // probably everything went well
-      alert("Event was created successfully!");
+      alert("Producted was created successfully!");
     } else {
       alert("something went wrong :(");
       // probably something went wrong
@@ -82,5 +84,4 @@ const handleSubmit = async (e) => {
   }
 };
 
-console.log("connected")
 
