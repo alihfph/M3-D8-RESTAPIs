@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<!-- saved from url=(0436)https://s3.eu-west-1.amazonaws.com/eduflow-production/activity-resources/957804483546610.html?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIA2TAWW44RDWPS6YGR%2F20210318%2Feu-west-1%2Fs3%2Faws4_request&X-Amz-Date=20210318T145937Z&X-Amz-Expires=600&X-Amz-SignedHeaders=host&response-content-disposition=inline%3B%20filename%2A%3DUTF-8%27%27M3-D9.html&X-Amz-Signature=0c68d922f138969d2dc818ee91d1831aa2f88d7a60a8d7a0389213b98c3f0bf5 -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+    <!--
+            START FROM YESTERDAY'S WORK
+
+             You are building the new Amazon.
+            This time you are also responsible for the back office.
+
+            THIS is you CRUD endpoint
+            https://striveschool-api.herokuapp.com/api/product/
+
+            The product model is 
+
+            {
+                "_id": "5d318e1a8541744830bef139", //SERVER GENERATED
+                "name": "app test 1",  //REQUIRED
+                "description": "somthing longer", //REQUIRED
+                "brand": "nokia", //REQUIRED
+                "imageUrl": "https://drop.ndtv.com/TECH/product_database/images/2152017124957PM_635_nokia_3310.jpeg?downsize=*:420&output-quality=80", //REQUIRED
+                "price": 100, //REQUIRED
+                "userId": "admin", //SERVER GENERATED
+                "createdAt": "2019-07-19T09:32:10.535Z", //SERVER GENERATED
+                "updatedAt": "2019-07-19T09:32:10.535Z", //SERVER GENERATED
+                "__v": 0 //SERVER GENERATED
+            }
+
+            #---------------------------------------------------------------#
+            EVERY REST API CALL SHOULD BE AUTHENTICATED. 
+            Every request to the API should use Token Based Authentication to secure access to the contents.
+            You can get your token by registering on: strive.school/studentlogin
+
+            Authorization: Bearer ###########
+
+            Where ######### is the access_token returned by the endpoint.
+
+            #---------------------------------------------------------------#
+
+            Today you have to implement:
+
+            - In the backoffice page
+                a) Add a button and the functionality to EDIT a single product ( PUT  endpoint/{id})
+                b) Add a button and the functionality to DELETE a single product ( DELETE endpoint/{id})
+                c) Add validation to the product creation/edit form
+                d) Display an error message if something goes wrong
+
+            - In the front page
+                a) Add a loader while waiting for the product to load
+                b) Add a link on each item to go to a detail page
+
+            - Create a new detail page where you are going to display the item information
+
+
+            ------ N.B. ------
+
+            Tokens duration is set to 14 days. Whenever you'll need to obtain a new one you can send the following request:
+            
+            POST https://striveschool-api.herokuapp.com/api/account/login
+            {
+                "username": "testusername@yourmail.com",
+                "password":"pass"
+            }   
+        -->
+  </head>
+
+  <body>
+
+</body></html>
